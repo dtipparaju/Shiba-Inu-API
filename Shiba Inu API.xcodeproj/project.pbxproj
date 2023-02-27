@@ -14,6 +14,7 @@
 		F952F29429AD024900F276FD /* Shiba_Inu_APITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952F29329AD024900F276FD /* Shiba_Inu_APITests.swift */; };
 		F952F29E29AD024900F276FD /* Shiba_Inu_APIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952F29D29AD024900F276FD /* Shiba_Inu_APIUITests.swift */; };
 		F952F2A029AD024900F276FD /* Shiba_Inu_APIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952F29F29AD024900F276FD /* Shiba_Inu_APIUITestsLaunchTests.swift */; };
+		F952F2AD29AD025C00F276FD /* EntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F952F2AC29AD025C00F276FD /* EntryView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		F952F29929AD024900F276FD /* Shiba Inu APIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Shiba Inu APIUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F952F29D29AD024900F276FD /* Shiba_Inu_APIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shiba_Inu_APIUITests.swift; sourceTree = "<group>"; };
 		F952F29F29AD024900F276FD /* Shiba_Inu_APIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shiba_Inu_APIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F952F2AC29AD025C00F276FD /* EntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntryView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				F952F28229AD024700F276FD /* Shiba_Inu_APIApp.swift */,
 				F952F28429AD024700F276FD /* ContentView.swift */,
+				F952F2AC29AD025C00F276FD /* EntryView.swift */,
 				F952F28629AD024900F276FD /* Assets.xcassets */,
 				F952F28829AD024900F276FD /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				F952F28529AD024700F276FD /* ContentView.swift in Sources */,
 				F952F28329AD024700F276FD /* Shiba_Inu_APIApp.swift in Sources */,
+				F952F2AD29AD025C00F276FD /* EntryView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
