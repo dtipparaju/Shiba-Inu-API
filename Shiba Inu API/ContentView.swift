@@ -10,13 +10,9 @@ import SwiftUI
 struct ContentView: View {
     var body: some View {
         NavigationView {
-            VStack{
-                viewLink(pictureNumber: "1")
-                viewLink(pictureNumber: "2")
-                viewLink(pictureNumber: "3")
-                viewLink(pictureNumber: "4")
-                viewLink(pictureNumber: "5")
-                
+            VStack {
+                NavigationLink("Lets see some dogs!", destination: EntryView())
+                    .font(.title).bold()
             }
         }
     }
@@ -33,14 +29,3 @@ struct Categories: Codable {
     var categories: [String]
 }
 
-struct viewLink: View {
-    var pictureNumber: String
-    var body: some View{
-        NavigationLink("Shiba Inu Picture \(pictureNumber)", destination: EntryView())
-            .padding()
-            .font(.title).bold()
-            .onTapGesture {
-            
-            }
-    }
-}
