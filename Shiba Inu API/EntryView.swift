@@ -11,13 +11,11 @@ struct EntryView: View {
     @State private var entries = [String]()
     @State private var showingAlert = false
     var body: some View {
-        List {
-            List(entries, id: \.self) { entry in
+            List (entries, id: \.self) { entry in
                 VStack(alignment: .leading) {
                     Link(destination: URL(string: entry)!) {
                         Text(entry)
                     }
-                    Text(entry)
                 }
             }
             .task {
@@ -28,15 +26,20 @@ struct EntryView: View {
                       message: Text("There was a problem loading the API"),
                       dismissButton: .default(Text("OK")))
             }
-        }
+        
     }
     
     func getEntry() async {
         let query = "https://shibe.online/api/shibes?count=10"
         if let url = URL(string: query) {
+            print("URL loaded")
             if let (data, _) = try? await URLSession.shared.data(from: url) {
+                print("data")
                 if let decodeResponse = try? JSONDecoder().decode([String].self, from: data) {
+                    print("decoded")
+                    print(decodeResponse)
                     entries = decodeResponse
+                    print(entries)
                     return
                 }
             }
