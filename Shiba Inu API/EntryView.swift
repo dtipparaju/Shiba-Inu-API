@@ -32,14 +32,9 @@ struct EntryView: View {
     func getEntry() async {
         let query = "https://shibe.online/api/shibes?count=10"
         if let url = URL(string: query) {
-            print("URL loaded")
             if let (data, _) = try? await URLSession.shared.data(from: url) {
-                print("data")
                 if let decodeResponse = try? JSONDecoder().decode([String].self, from: data) {
-                    print("decoded")
-                    print(decodeResponse)
                     entries = decodeResponse
-                    print(entries)
                     return
                 }
             }
